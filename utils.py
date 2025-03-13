@@ -102,4 +102,4 @@ def calculate_Rabi_freq(Delta_0000, Delta_1000, beta, mode = 'simple'):
     if mode == 'simple':
         return coeff * beta[0]*(np.cos(Delta_0000[1]-beta[1]))
     elif mode == 'simple_dipole': # we have to check the calculation 
-        return coeff * beta[0]*(np.cos(Delta_0000[1]-beta[1]) - (Delta_1000[0]/Delta_0000[0])**2 * np.sin(beta[1]-Delta_1000[1])*np.sin(Delta_0000[1]-Delta_1000[1]))
+        return coeff * beta[0]*(np.cos(Delta_0000[1]-beta[1]) + (Delta_1000[0]/Delta_0000[0])**2 * np.sin(beta[1]-Delta_1000[1])*np.sin(Delta_0000[1]-Delta_1000[1]))
