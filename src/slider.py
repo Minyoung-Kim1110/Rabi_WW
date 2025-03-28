@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
-from values import *
-from utils import *
+from src.values import *
+from src.utils import *
 
 well_potential = V_l()
 
