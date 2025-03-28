@@ -1,0 +1,8 @@
+name: WW_Sim
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - numpy
+  - scipy
+  - matplotlib
