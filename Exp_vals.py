@@ -21,7 +21,7 @@ points = np.column_stack([X.ravel(), Y.ravel()]) # linearlized points
 exp_cov = cdist(points, points, 'sqeuclidean')
 exp_cov = np.exp(-exp_cov/4/l_t**2)
 
-c1 = lambda z: (E_G*a_t)**2 * n(z)*(1-n(z))/(4*np.pi*l_t**2)* exp_cov
+c1 = lambda z: (E_G*a_t_)**2 * n(z)*(1-n(z))/(4*np.pi*l_t**2)* exp_cov
 
 for i,z in enumerate(z_values):
     C_joint = c1(z)
